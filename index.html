@@ -4,169 +4,399 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hiba — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Official Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- FontAwesome (your kit id kept) -->
   <script src="https://kit.fontawesome.com/ac92379ffb.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-slate-600 text-white">
+<body class="bg-black text-white font-[Poppins]">
 
-  <!-- NAV -->
-  <nav class="sticky top-0 z-50 bg-slate-400 backdrop-blur">
-    <div class="container mx-auto flex items-center justify-between px-4 py-3">
-      <h1 class="text-xl md:text-2xl font-bold">PORTFOLIO</h1>
+  <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-indigo-500/20 font-[Orbitron]">
+  
+  <div class="container mx-auto flex items-center justify-between px-6 py-4">
+    
+    <!-- Logo -->
+    <h1 class="text-xl md:text-2xl font-semibold tracking-wide text-white">
+      <span class="text-indigo-400">PORT</span>FOLIO
+    </h1>
 
-      <!-- desktop links -->
-      <ul class="hidden md:flex gap-6">
-        <li><a href="#home" class="hover:text-indigo-300">Home</a></li>
-        <li><a href="#about" class="hover:text-indigo-300">About</a></li>
-        <li><a href="#skills" class="hover:text-indigo-300">Skills</a></li>
-        <li><a href="#project" class="hover:text-indigo-300">Project</a></li>
-        <li><a href="#contact" class="hover:text-indigo-300">Contact</a></li>
-      </ul>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-8 text-gray-300 font-medium">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#project" class="nav-link">Project</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
 
-      <!-- mobile button -->
-      <button id="menu-btn" class="md:hidden text-2xl" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    <!-- Mobile Button -->
+    <button id="menu-btn" class="md:hidden text-2xl text-white">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-black/95 px-6 py-6 space-y-4 text-gray-300 font-medium">
+    <a class="block nav-link" href="#home">Home</a>
+    <a class="block nav-link" href="#about">About</a>
+    <a class="block nav-link" href="#skills">Skills</a>
+    <a class="block nav-link" href="#project">Project</a>
+    <a class="block nav-link" href="#contact">Contact</a>
+  </div>
+
+</nav>
+
+<section id="home" class="relative h-screen bg-black text-white overflow-hidden font-[Orbitron]">
+  <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-black to-purple-900/20"></div>
+
+  <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-20 animate-fadeIn">
+    
+    <h2 class="font-thin text-4xl md:text-6xl tracking-widest name-glow">
+      HIBA
+    </h2>
+
+    <h1 class="font-bold text-5xl md:text-7xl tracking-wide name-glow">
+      THASNI
+    </h1>
+
+    <p class="md:text-xl mt-6 text-gray-400">
+      <span class="typing"></span>
+    </p>
+
+    <a href="#contact"
+       class="inline-block mt-8 px-6 py-3 border border-white rounded-full hover:bg-white hover:text-black transition-all duration-300 w-fit">
+       Let's Talk
+    </a>
+
+  </div>
+
+  <!-- Social Icons -->
+  <div class="absolute bottom-6 left-6 flex gap-6 z-10 text-gray-400 animate-fadeIn delay-500">
+    <a href="https://www.linkedin.com/in/hiba-thasni-19608637a/" target="_blank"
+       class="hover:text-white transition duration-300">
+       <i class="fa-brands fa-linkedin text-2xl"></i>
+    </a>
+
+    <a href="https://github.com/h54292386-stack"
+       class="hover:text-white transition duration-300">
+       <i class="fa-brands fa-github text-2xl"></i>
+    </a>
+
+    <a href="assets/hiba-cv.pdf" target="_blank">
+      <i class="fa-solid fa-file text-2xl"></i>
+    </a>
+  </div>
+
+</section>
+
+  <section id="about" class="relative py-20 px-6 md:px-20 bg-gradient-to-br from-black via-slate-900 to-black overflow-hidden">
+
+  <!-- Soft Background Glow -->
+  <div class="absolute inset-0 bg-indigo-900/10 blur-3xl"></div>
+
+  <div class="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center animate-fadeIn">
+
+    <!-- Text -->
+    <div>
+    <h2 class="text-3xl md:text-5xl font-bold mb-6 heading-font">
+      ABOUT <span class="text-indigo-400">ME</span>
+    </h2>
+
+     <p class=" reveal text-sm text-gray-300 leading-relaxed heading-font">   
+       I am Hiba Thasni, a dedicated and self-driven MERN Stack Developer with hands-on experience 
+       building secure and scalable full-stack web applications. As a passionate self-learner, 
+       I continuously explore modern technologies and best practices to strengthen my technical expertise.
+
+        <br><br>
+
+        I specialize in MongoDB, Express.js, React.js, and Node.js, with strong knowledge of RESTful APIs, 
+        JWT authentication, and modern frontend development. I enjoy transforming ideas into functional 
+        digital solutions, writing clean and maintainable code, and creating responsive user experiences 
+        across devices.
+        <br><br>
+
+       With real-world internship experience and completed backend projects, I am committed to continuous 
+       learning, improving my problem-solving skills, and delivering impactful software solutions.     
+     </p>
     </div>
 
-    <!-- mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-slate-700/95 px-4 py-4">
-      <a class="block py-2" href="#home">Home</a>
-      <a class="block py-2" href="#about">About</a>
-      <a class="block py-2" href="#skills">Skills</a>
-      <a class="block py-2" href="#project">Project</a>
-      <a class="block py-2" href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section id="home" class="relative h-screen">
-    <!-- use local image 'lop.jpg' in same folder or replace with an online image -->
-    <img src="lop.jpg" alt="hero" class="absolute inset-0 w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black/40"></div>
-
-    <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-20">
-      <h2 class="font-thin text-4xl md:text-6xl">HIBA</h2>
-      <h1 class="font-bold text-5xl md:text-7xl">THASNI</h1>
-      <p class="text-lg md:text-xl mt-2">Software Developer</p>
-      <a href="#contact" class="inline-block mt-6 px-6 py-2 bg-black border border-white rounded hover:text-indigo-300 w-[120px]">Let's Talk</a>
-    </div>
-
-    <div class="absolute bottom-6 left-6 flex gap-4 z-10">
-      <a href="https://www.linkedin.com/in/hiba-thasni-19608637a/" target="_blank"><i class="fa-brands fa-linkedin text-2xl"></i></a>
-      <a href="https://wa.me/8593083038" target="_blank"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
-      <a href="https://www.instagram.com/hiba_thazni__" target="_blank"><i class="fa-brands fa-instagram text-2xl"></i></a>
-      <a href="https://in.pinterest.com/pin/14636767535372275/" target="_blank"><i class="fa-brands fa-pinterest text-2xl"></i></a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="py-16 px-6 md:px-20 bg-slate-700/30">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-3xl md:text-5xl font-bold mb-4">ABOUT</h2>
-        <p class="text-gray-200 leading-relaxed">
-                    I am Hiba Thasni, a passionate and
-                    detail-oriented Web Developer<br> with a strong interest in creating modern, responsive, and
-                    user-friendly websites.<br> My expertise lies in HTML, CSS, JavaScript, and Tailwind CSS, and I
-                    enjoy
-                    transforming ideas into <br>functional digital solutions. I love solving problems through code,
-                    building
-                    clean designs,<br> and ensuring smooth user experiences across all devices. With a continuous
-                    learning
-                    mindset, <br>I am expanding my knowledge in frameworks like React and other modern <br>technologies
-                    to
-                    stay ahead in the fast-growing tech industry.I believe in building not just websites,<br>but
-                    meaningful
-                    digital experiences that add value to people and businesses.<br> With a strong foundation in
-                    front-end
-                    technologies and an eagerness to learn new skills,<br> I am committed to delivering innovative
-                    solutions
-                    and achieving excellence in every project I work on.
-        </p>
+    <!-- Image -->
+    <div class="flex justify-center">
+      <div class="reveal image-wrapper">
+        <img src="assets/photo2.jfif" alt="Hiba"
+          class="w-56 md:w-80 object-cover rounded-2xl shadow-xl" />
       </div>
-      <div class="flex justify-center">
-        <!-- place photo2.jfif in same folder or use a remote url -->
-        <img src="photo2.jfif" alt="Hiba" class="rounded-lg shadow-md w-48 md:w-80 object-cover" />
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" class="py-20 px-6 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 md:px-20">
+
+  <!-- Gradient Heading -->
+  <h2 class="text-3xl md:text-5xl font-bold text-center mb-14 
+             bg-gradient-to-r from-indigo-400 via-pink-400 to-cyan-400 
+             text-transparent bg-clip-text heading-font">
+    Technical Skills
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+    <!-- Frontend Card -->
+    <div data-aos="fade-up"
+         class="skill-card reveal backdrop-blur-lg bg-white/10 border border-white/20 
+                rounded-2xl p-8 shadow-xl hover:scale-105 
+                transition duration-300">
+
+      <h3 class="text-xl font-semibold text-indigo-300 mb-6 heading-font">Frontend</h3>
+
+      <div class="flex flex-wrap gap-3 heading-font text-sm">
+        <span class="skill-badge  px-4 py-2 bg-indigo-500/20 text-indigo-200 rounded-full">HTML5</span>
+        <span class="skill-badge px-4 py-2 bg-indigo-500/20 text-indigo-200 rounded-full">CSS3</span>
+        <span class="skill-badge px-4 py-2 bg-indigo-500/20 text-indigo-200 rounded-full">JavaScript</span>
+        <span class="skill-badge px-4 py-2 bg-indigo-500/20 text-indigo-200 rounded-full">React.js</span>
+        <span class="skill-badge px-4 py-2 bg-indigo-500/20 text-indigo-200 rounded-full">Tailwind CSS</span>
       </div>
     </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="py-16 px-6 bg-slate-400 md:px-20">
-    <h2 class="text-3xl md:text-5xl font-bold text-center mb-8">SKILLS</h2>
-    <div class="max-w-3xl mx-auto space-y-6">
-      <div>
-        <div class="flex justify-between mb-1"><span><i class="fa-brands fa-html5 text-orange-500"></i> HTML</span><span>95%</span></div>
-        <div class="w-full bg-gray-300 rounded-full h-3"><div class="h-3 rounded-full bg-orange-500 w-[95%]"></div></div>
-      </div>
-      <div>
-        <div class="flex justify-between mb-1"><span><i class="fa-brands fa-css3-alt text-blue-600"></i> CSS</span><span>90%</span></div>
-        <div class="w-full bg-gray-300 rounded-full h-3"><div class="h-3 rounded-full bg-blue-600 w-[90%]"></div></div>
-      </div>
-      <div>
-        <div class="flex justify-between mb-1"><span><i class="fa-brands fa-js text-yellow-400"></i> JavaScript</span><span>80%</span></div>
-        <div class="w-full bg-gray-300 rounded-full h-3"><div class="h-3 rounded-full bg-yellow-400 w-[80%]"></div></div>
+    <!-- Backend Card -->
+    <div data-aos="fade-up" data-aos-delay="200"
+         class="skill-card reveal backdrop-blur-lg bg-white/10 border border-white/20 
+                rounded-2xl p-8 shadow-xl hover:scale-105 
+                transition duration-300">
+
+      <h3 class="text-xl font-semibold text-green-300 mb-6 heading-font">Backend</h3>
+
+      <div class="flex flex-wrap gap-3 heading-font text-sm">
+        <span class="skill-badge px-4 py-2 bg-green-500/20 text-green-200 rounded-full">Node.js</span>
+        <span class="skill-badge px-4 py-2 bg-green-500/20 text-green-200 rounded-full">Express.js</span>
+        <span class="skill-badge px-4 py-2 bg-green-500/20 text-green-200 rounded-full">REST APIs</span>
+        <span class="skill-badge px-4 py-2 bg-green-500/20 text-green-200 rounded-full">JWT</span>
+        <span class="skill-badge px-4 py-2 bg-green-500/20 text-green-200 rounded-full">bcrypt</span>
       </div>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section id="project" class="py-16 px-6 md:px-20 bg-slate-300">
-    <h2 class="text-3xl md:text-5xl font-bold text-white text-center mb-8">PROJECTS</h2>
-    <div class="max-w-6xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <article class="bg-slate-700 p-4 rounded shadow">
-        <img src="nav bar.png" alt="" class="w-full h-40 object-cover rounded mb-3">
-        <h3 class="text-xl font-semibold">W3 Schools Clone</h3>
-        <p class="text-gray-300">A simple clone of the W3Schools navigation bar built with HTML and
-                        CSS to practice responsive design and styling.</p>
-      </article>
-      <article class="bg-slate-700 p-4 rounded shadow">
-        <img src="clone.png" alt="" class="w-full h-40 object-cover rounded mb-3">
-        <h3 class="text-xl font-semibold">Trivago</h3>
-        <p class="text-gray-300"> A mini project that simulates a hotel booking interface, focusing
-                        on layout design, responsive styling, and user-friendly UI.</p>
-      </article>
-      <article class="bg-slate-700 p-4 rounded shadow">
-        <img src="portfolio.png" alt="" class="w-full h-40 object-cover rounded mb-3">
-        <h3 class="text-xl font-semibold">Portfolio</h3>
-        <p class="text-gray-300">A personal portfolio created to highlight my skills, coding
-                        knowledge, and completed works in a clean and professional design.</p>
-      </article>
+    <!-- Database & Tools Card -->
+    <div data-aos="fade-up" data-aos-delay="400"
+         class="skill-card reveal backdrop-blur-lg bg-white/10 border border-white/20 
+                rounded-2xl p-8 shadow-xl hover:scale-105 
+                transition duration-300">
+
+      <h3 class="text-xl font-semibold text-pink-300 mb-6 heading-font">Database & Tools</h3>
+
+      <div class="flex flex-wrap gap-3 heading-font text-sm">
+        <span class="skill-badge px-4 py-2 bg-pink-500/20 text-pink-200 rounded-full">MongoDB</span>
+        <span class="skill-badge px-4 py-2 bg-pink-500/20 text-pink-200 rounded-full">Git</span>
+        <span class="skill-badge px-4 py-2 bg-pink-500/20 text-pink-200 rounded-full">GitHub</span>
+        <span class="skill-badge px-4 py-2 bg-pink-500/20 text-pink-200 rounded-full">Postman</span>
+        <span class="skill-badge px-4 py-2 bg-pink-500/20 text-pink-200 rounded-full">MVC</span>
+      </div>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-16 px-6 bg-slate-400 md:px-20">
-    <h2 class="text-3xl md:text-5xl font-bold text-center mb-8">CONTACT ME</h2>
-    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-      <div>
-        <h3 class="text-2xl font-bold mb-4">Contact Information</h3>
-        <p><i class="fa-solid fa-envelope"></i> h54292386@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> 8593083038</p>
-        <div class="flex gap-3 mt-4">
-          <a href="#"><i class="fa-brands fa-instagram text-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+  </div>
+</section>
+
+     <section class="project  reveal" id="project">
+       <h1 class="text-3xl md:text-5xl font-bold mb-6 heading-font">
+          PROJE<span class="text-indigo-400">CTS</span>
+       </h1>
+        <h1>Featured Work</h1>
+        <hr>
+        <div class="info-pro heading-font text-sm">
+            <p>A showcase of my recent projects demonstrating expertise in full-stack </p>
+            <p>development, modern frameworks, and creative problem-solving.</p>
         </div>
-      </div>
+        <div class="projects-container">
 
-      <form class="bg-slate-700 p-6 rounded shadow space-y-3">
-        <input class="w-full p-3 rounded bg-gray-200" placeholder="Your Name" />
-        <input class="w-full p-3 rounded bg-gray-200" placeholder="Your Email" />
-        <input class="w-full p-3 rounded bg-gray-200" placeholder="Subject" />
-        <textarea class="w-full p-3 rounded bg-gray-200 h-28" placeholder="Message"></textarea>
-        <button class="w-full py-3 bg-indigo-500 rounded hover:bg-indigo-600">Send Message</button>
-      </form>
+  <div class="project-card">
+  <img src="assets/e-commerce.png" alt="Elanora - Women's Luxury Bags">
+  <h3 class="heading-font ">Elanora – Women’s Luxury Bags</h3>
+  <p>Elanora is a full-stack MERN e-commerce platform for women’s luxury bags, featuring secure authentication, product filtering, Redux state management, shopping cart, and seamless checkout experience.</p>
+  <div class="skills heading-font ">
+    <a href="#">React</a>
+    <a href="#">Redux</a>
+    <a href="#">Node.js</a>
+    <a href="#">Express.js</a>
+    <a href="#">MongoDB</a>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+  </div>
+  <div class="btns">
+    <a href="https://github.com/h54292386-stack/elanora-website" class="btn"><i class="fab fa-github"></i> GitHub</a>
+    <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+  </div>
+</div>
+
+    <div class="project-card">
+  <img src="assets/nav bar.png" alt="W3 Schools Clone">
+  <h3 class="heading-font">W3 Schools Clone</h3>
+  <p>A simple clone of the W3Schools navigation bar built with HTML and CSS to practice responsive design and styling.</p>
+  <div class="skills heading-font text-sm ">
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">Responsive</a>
+  </div>
+  <div class="btns">
+    <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+    <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <img src="assets/clone.png" alt="Trivago">
+  <h3 class="heading-font">Trivago</h3>
+  <p>A mini project that simulates a hotel booking interface, focusing on layout design, responsive styling, and user-friendly UI.</p>
+  <div class="skills heading-font">
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">UI Design</a>
+  </div>
+  <div class="btns">
+    <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+    <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <img src="" alt="Portfolio">
+  <h3 class="heading-font">Portfolio</h3>
+  <p>A personal portfolio created to highlight my skills, coding knowledge, and completed works in a clean and professional design.</p>
+  <div class="skills heading-font">
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">JavaScript</a>
+  </div>
+  <div class="btns">
+    <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+    <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+  </div>
+</div>
+
+  
+  </div>
+     </section>
+     <!-- Services Section -->
+        <section id="service" class="section services reveal">
+          <h1 class="text-3xl md:text-5xl font-bold mb-6 heading-font">
+          SERVI<span class="text-indigo-400">CES</span>
+       </h1>
+            <h1>OUR Features & Services</h1>
+            <hr>
+            <div class="container">
+                <div class="services-content">
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="heading-font ">Web Development</h3>
+                            <p>I create responsive, modern websites using the latest technologies and best practices. From concept to deployment, I ensure your website looks great and performs perfectly.</p>
+                            <div class="service-features heading-font ">
+                                <span>Responsive Design</span>
+                                <span>Performance Optimized</span>
+                                <span>SEO Friendly</span>
+                            </div>
+                        </div>
+                      
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3 class="heading-font">UI/UX Design</h3>
+                            <p>Designing intuitive and beautiful user interfaces that provide exceptional user experiences. I focus on usability, accessibility, and visual appeal.</p>
+                            <div class="service-features heading-font">
+                                <span>User-Centered</span>
+                                <span>Modern Design</span>
+                                <span>Accessibility</span>
+                            </div>
+                        </div>
+                      
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h3 class="heading-font">E-commerce Solutions</h3>
+                            <p>Building secure and efficient e-commerce platforms that drive sales and provide excellent shopping experiences for your customers.</p>
+                            <div class="service-features heading-font">
+                                <span>Secure Payments</span>
+                                <span>Inventory Management</span>
+                                <span>Analytics</span>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="heading-font">API Development</h3>
+                            <p>Creating robust and scalable APIs that power your applications. I build RESTful and GraphQL APIs with proper documentation and testing.</p>
+                            <div class="service-features heading-font">
+                                <span>RESTful APIs</span>
+                                <span>GraphQL</span>
+                                <span>Documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="contact" class="py-16 px-6 bg-black md:px-20 relative overflow-hidden">
+    <h1 class="text-3xl md:text-5xl font-bold mb-6 heading-font">
+          CONTACT<span class="text-indigo-400">  ME</span>
+       </h1>
+
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+    
+    <!-- Contact Info -->
+    <div class="contact-card animate-float">
+      <h3 class="text-2xl font-bold mb-4 text-indigo-300 heading-font">Contact Information</h3>
+      <p><i class="fa-solid fa-envelope"></i> h54292386@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> 8593083038</p>
+      <div class="absolute left- flex gap-4 z-10 text-gray-400 animate-fadeIn delay-500">
+       <a href="https://www.linkedin.com/in/hiba-thasni-19608637a/" target="_blank"
+       class="hover:text-white transition duration-300">
+       <i class="fa-brands fa-linkedin text-2xl"></i>
+        </a>     
+       <a href="https://github.com/h54292386-stack"
+       class="hover:text-white transition duration-300">
+       <i class="fa-brands fa-github text-2xl"></i>
+        </a>
+  </div>
     </div>
-  </section>
+
+    <!-- Contact Form -->
+  <form id="contact-form" class="contact-card animate-float bg-indigo-900 p-6 rounded shadow space-y-3 heading-font">
+  <input type="text" name="user_name" class="w-full p-3 rounded bg-indigo-700 text-white placeholder-indigo-300" placeholder="Your Name" required />
+  <input type="email" name="user_email" class="w-full p-3 rounded bg-indigo-700 text-white placeholder-indigo-300" placeholder="Your Email" required />
+  <input type="text" name="subject" class="w-full p-3 rounded bg-indigo-700 text-white placeholder-indigo-300" placeholder="Subject" required />
+  <textarea name="message" class="w-full p-3 rounded bg-indigo-700 text-white placeholder-indigo-300 h-28" placeholder="Message" required></textarea>
+  <button type="submit" class="w-full py-3 bg-indigo-500 rounded hover:bg-indigo-600 transition-all">Send Message</button>
+</form>
+    
+  </div>
+  <script>
+  const contactForm = document.getElementById("contact-form");
+
+  contactForm.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default page reload
+
+    emailjs.sendForm('service_x64gnwa', 'template_89mqdfp', this)
+      .then(() => {
+        alert("Message sent successfully! ✅");
+        contactForm.reset(); // clear the form
+      }, (error) => {
+        console.error("EmailJS Error:", error);
+        alert("Oops! Something went wrong. Please try again.");
+      });
+  });
+</script>
+</section>
 
   <footer class="py-6 text-center bg-slate-900">
     <p class="text-gray-400">Thanks for visiting. ©2025 Hiba Thasni</p>
   </footer>
 
-  <!-- Simple, safe JS: check elements exist before binding -->
   <script>
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
@@ -176,14 +406,49 @@
         btn.setAttribute('aria-expanded', String(!isHidden));
       });
 
-      // Close menu when clicking a link (mobile)
       menu.querySelectorAll('a').forEach(a => {
         a.addEventListener('click', () => menu.classList.add('hidden'));
       });
     } else {
-      // helpful console message if something went wrong
       console.warn('Mobile menu elements not found. menu-btn or mobile-menu id missing.');
     }
   </script>
+
+  <script>
+  const text = "MERN Stack Developer";
+  const typingElement = document.querySelector(".typing");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      typingElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 80);
+    }
+  }
+
+  window.onload = type;
+</script>
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        el.classList.add("active");
+      }
+    });
+  });
+</script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("L-ioQK-31M1OVQ53"); 
+   })();
+</script>
 </body>
 </html>
